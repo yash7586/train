@@ -234,13 +234,14 @@ export default function HowItWorks() {
           <p className="text-xl text-gray-300 mb-8">
             Watch a live demo of our train delivery system at a partner restaurant
           </p>
-          <div className="aspect-video bg-slate-900/50 rounded-2xl flex items-center justify-center">
-            <div className="text-center">
-              <div className="w-20 h-20 bg-amber-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <div className="w-0 h-0 border-l-[15px] border-l-white border-y-[10px] border-y-transparent ml-1" />
-              </div>
-              <p className="text-gray-400">Demo video placeholder</p>
-            </div>
+          <div className="aspect-video bg-slate-900/50 rounded-2xl overflow-hidden">
+            <video
+              controls
+              className="w-full h-full object-cover"
+            >
+              <source src="/v1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </motion.div>
       </section>
