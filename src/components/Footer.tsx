@@ -13,7 +13,7 @@ export function Footer() {
                 <Train className="w-6 h-6 text-slate-900" />
               </div>
               <div>
-                <div className="text-xl text-white">TrainDeliver</div>
+                <div className="text-xl text-white">Aitri Enterprise</div>
                 <div className="text-xs text-amber-400">Automated Restaurant Systems</div>
               </div>
             </div>
@@ -86,15 +86,15 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-gray-400 text-sm">
                 <MapPin className="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" />
-                <span>123 Tech Park, Innovation Hub, Mumbai 400001</span>
+                <span>60/4/1328, Niranjan Sen Pally, Shyam Nagar, Purbabidyadharpur, Bhatpara, North 24 Paraganas Pincode - 743127, West Bengal</span>
               </li>
               <li className="flex items-center gap-2 text-gray-400 text-sm">
                 <Phone className="w-4 h-4 text-amber-400 flex-shrink-0" />
-                <span>+91 98765 43210</span>
+                <span>+91 9830482239</span>
               </li>
               <li className="flex items-center gap-2 text-gray-400 text-sm">
                 <Mail className="w-4 h-4 text-amber-400 flex-shrink-0" />
-                <span>contact@traindeliver.com</span>
+                <span>aitrienterprise2018@gmail.com</span>
               </li>
             </ul>
           </div>

@@ -27,7 +27,7 @@ export function Header() {
               <Train className="w-6 h-6 text-slate-900" />
             </div>
             <div className="hidden md:block">
-              <div className="text-xl text-white">TrainDeliver</div>
+              <div className="text-xl text-white">Aitri Enterprise</div>
               <div className="text-xs text-amber-400">Automated Restaurant Systems</div>
             </div>
           </Link>

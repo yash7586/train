@@ -1,100 +1,190 @@
 import { motion } from 'motion/react';
 import { ProductCard } from '../components/ProductCard';
-import { Check } from 'lucide-react';
 
 const allProducts = [
   {
-    title: 'Basic Train System',
-    subtitle: '4 tables • 10m track',
-    price: '₹2.5 Lakh',
-    image: 'https://images.unsplash.com/photo-1765055509253-0620d7849767?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwdHJhaW4lMjBkZWxpdmVyeXxlbnwxfHx8fDE3NjU5NTMxNDB8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    title: 'STEAM  ENGINE',
+    subtitle: '410 mm x 115 mm x 160 mm',
+    price: '₹46,000.00',
+    image: 'S1.png',
     features: [
-      'Serves up to 4 tables',
-      '10-meter circular track',
-      'Basic control system',
-      '1-year warranty',
-      'Installation included',
+      '410 mm x 115 mm x 160 mm ',
+      '5.5 kg apprx',
+      'Motor Drive',
+      'DC 12V - Electric / Battery',
+      'CHASSIS & WHEEl :  Metal Made. Body & Parts - PVC & Metal made (as required). All the items used, are being manufactured by us with surgicall precision using our very own  3D printer & Laser Cutting Machine.',
+      'Quantity: 1',
     ],
   },
   {
-    title: 'Pro Train System',
-    subtitle: '12 tables • Kitchen station',
-    price: '₹6.5 Lakh',
-    image: 'https://images.unsplash.com/photo-1685040235380-a42a129ade4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjByZXN0YXVyYW50JTIwaW50ZXJpb3J8ZW58MXx8fHwxNzY1OTI2Njg2fDA&ixlib=rb-4.1.0&q=80&w=1080',
+    title: 'ELECTRIC  LOCOMOTIVE (WAP 7)',
+    subtitle: '425 mm x 115 mm x 165 mm',
+    price: '₹47,000.00',
+    image: 'S2.jpeg',
     features: [
-      'Serves up to 12 tables',
-      '25-meter advanced track',
-      'Kitchen integration',
-      'Smart control panel',
-      '2-year warranty',
+      '420 mm x 115 mm x 165 mm ',
+      '6 kg apprx',
+      'Motor Drive',
+      'DC 12V - Electric / Battery',
+      'CHASSIS & WHEEl :  Metal Made. Body & Parts - PVC & Metal made (as required). All the items used, are being manufactured by us with surgicall precision using our very own  3D printer & Laser Cutting Machine.',
+      'Quantity: 1',
     ],
     popular: true,
   },
   {
-    title: 'Enterprise System',
-    subtitle: '50+ tables • Multi-level',
-    price: '₹15 Lakh+',
-    image: 'https://images.unsplash.com/photo-1623123096729-26b481292919?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb29kJTIwZGVsaXZlcnklMjB0ZWNobm9sb2d5fGVufDF8fHx8MTc2NTk1MzE0MXww&ixlib=rb-4.1.0&q=80&w=1080',
+    title: 'ELECTRIC  LOCOMOTIVE (WAG 9)',
+    subtitle: '420 mm x 115 mm x 165 mm ',
+    price: '₹47,000.00',
+    image: 'S3.jpeg',
     features: [
-      'Unlimited tables',
-      'Multi-level tracks',
-      'AI-powered routing',
-      'Complete automation',
-      '5-year warranty',
+      '420 mm x 115 mm x 165 mm ',
+      '6 kg apprx ',
+      'Motor Drive',
+      ' DC 12V - Electric / Battery',
+      'CHASSIS & WHEEl :  Metal Made. Body & Parts - PVC & Metal made (as required). All the items used, are being manufactured by us with surgicall precision using our very own  3D printer & Laser Cutting Machine.',
+      'Quantity: 1',
     ],
   },
   {
-    title: 'Starter Kit',
-    subtitle: '2 tables • 5m track',
-    price: '₹1.5 Lakh',
-    image: 'https://images.unsplash.com/photo-1713857297379-6fc26e70f581?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhdXRvbWF0ZWQlMjBzeXN0ZW18ZW58MXx8fHwxNzY1OTUzMTQxfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    title: 'DIESEL LOCOMOTIVE',
+    subtitle: '425 mm x 115 mm x 165 mm',
+    price: '₹47,500.00',
+    image: 'S4.jpeg',
     features: [
-      'Perfect for testing',
-      'Compact design',
-      'Easy installation',
-      '6-month warranty',
-      'Training included',
+      '425 mm x 115 mm x 165 mm',
+      '6 kg apprx',
+      ' Motor Drive ',
+      'DC 12V - Electric / Battery',
+      'CHASSIS & WHEEl :  Metal Made. Body & Parts - PVC & Metal made (as required). All the items used, are being manufactured by us with surgicall precision using our very own  3D printer & Laser Cutting Machine.',
+      'Quantity: 1',
     ],
   },
   {
-    title: 'Premium Plus',
-    subtitle: '25 tables • Dual track',
-    price: '₹10 Lakh',
+    title: 'ELECTRIC  LOCOMOTIVE (VANDE  BHARAT)',
+    subtitle: '425 mm x 115 mm x 165 mm',
+    price: '₹51,000.00',
+    image: 'S5.jpeg',
+    features: [
+      '420 mm x 115 mm x 165 mm ',
+      '6 kg apprx ',
+      'Motor Drive ',
+      'DC 12V - Electric / Battery',
+      'CHASSIS & WHEEl :  Metal Made. Body & Parts - PVC & Metal made (as required). All the items used, are being manufactured by us with surgicall precision using our very own  3D printer & Laser Cutting Machine.',
+      'Quantity: 1',
+    ],
+  },
+  {
+    title: 'FREIGHT  WAGON',
+    subtitle: '350 mm x 155 mm x 65 mm',
+    price: '₹10,000.00',
+    image: 'S6.jpeg',
+    features: [
+      '350 mm x 155 mm x 65 mm ',
+      '2 kg apprx',
+      ' Nil',
+      ' Attached  to  Engine',
+      'Metal made',
+      'Quantity: 1',
+    ],
+  },
+  {
+    title: 'RAIL TRACK',
+    subtitle: '80 mm gap - Throughout',
+    price: '₹700.00',
+    image: 'S7.jpeg',
+    features: [
+      '80 mm gap - Throughout',
+      ' 0.8 kg / ft apprx',
+      ' Nil',
+      ' Nil',
+      'Metal track .Wooden sleeper , mounted on top of plywood',
+      'Quantity: 1',
+    ],
+  },
+  {
+    title: 'CROSSING',
+    subtitle: 'Created as per requirement',
+    price: '₹12,000.00',
+    image: 'S8.jpeg',
+    features: [
+      'Created as per requirement ',
+      'Nil ',
+      'SERVO Motor',
+      'Driven by cercuit as per requirement',
+      'Metal track .Wooden sleeper , mounted on top of plywood ',
+      'Quantity: 1',
+    ],
+  },
+  {
+    title: 'CERCUIT BOX (for 1-6 tables) & Operating Panel Box  ',
+    subtitle: '350 mm x 260 mm x 135 mm & 200 mm x 150 mm x  40 mm',
+    price: '₹30,000.00',
+    image: 'S9.jpeg',
+    features: [
+     '350 mm x 260 mm x 135 mm & 200 mm x 150 mm x  40 mm ',
+     '5 kg apprx & 0.5 kg apprx',
+     ' Nil',
+     ' AC 220  /  DC  12V',
+     'Various brancded material used - as per requirement & programming controller',
+     'Quantity: 1',
+    ],
+  },
+  {
+    title: 'SERVO - Track Changer Cercuit',
+    subtitle: '120 mm x 140 mm x 50 mm',
+    price: '₹4,500.00',
+    image: 'S10.jpeg',
+    features: [
+      '120 mm x 140 mm x 50 mm',
+      ' 0.25 kg apprx',
+      ' Nil',
+      ' DC  12V',
+      'Programming Controller',
+      'Quantity: 1',
+    ],
+  },
+  {
+    title: 'DISPLAY  PLATFORM  BOARD  (Stations name board)',
+    subtitle: '140 mm x 30 mm x 200 mm',
+    price: '₹1,500.00',
     image: 'https://images.unsplash.com/photo-1684050611203-cfd998ca2bf8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyYWlsd2F5JTIwdHJhY2tzfGVufDF8fHx8MTc2NTk1MzE0Mnww&ixlib=rb-4.1.0&q=80&w=1080',
     features: [
-      'Dual track system',
-      'Serves 25 tables',
-      'Advanced sensors',
-      '3-year warranty',
-      'Priority support',
+      'DIMENSION (L x W x H): 140 mm x 30 mm x 200 mm ',
+      '0.1 kg apprx',
+      'Strip Light (LED)',
+      'DC  12V ',
+      '3D printed frame, acryiic board engraving',
+      'Quantity: 1',
     ],
   },
   {
-    title: 'Custom Solution',
-    subtitle: 'Tailored to your needs',
-    price: 'Custom Quote',
-    image: 'https://images.unsplash.com/photo-1485182708500-e8f1f318ba72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwYnVzaW5lc3N8ZW58MXx8fHwxNzY1OTUzMTQyfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    title: 'SYGNALLING  SYSTEM',
+    subtitle: '25 mm x 25 mm x 200 mm',
+    price: '₹1,250.00',
+    image: 'S12.jpeg',
     features: [
-      'Fully customizable',
-      'Site assessment',
-      'Custom track design',
-      'Dedicated engineer',
-      'Extended warranty',
+      'DIMENSION (L x W x H): 25 mm x 25 mm x 200 mm ',
+      '50 grm apprx',
+      ' LED light- 2 Nos (Green & Red)',
+      'DC  12V',
+      '3D printed Socket & Base , Brass made hallow pole , 2 Nos of  Light as per requirement',
+      'Quantity: 1',
     ],
   },
-];
-
-const comparisonFeatures = [
-  'Number of Tables',
-  'Track Length',
-  'Control System',
-  'Kitchen Integration',
-  'Mobile App',
-  'Analytics Dashboard',
-  'Multi-level Support',
-  'AI Routing',
-  'Warranty Period',
-  'Installation',
+  {
+    title: 'SOUND  SYSTEM ',
+    subtitle: '150 mm x 200 mm x 40 mm',
+    price: '₹20,000.00',
+    image: 'https://images.unsplash.com/photo-1684050611203-cfd998ca2bf8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyYWlsd2F5JTIwdHJhY2tzfGVufDF8fHx8MTc2NTk1MzE0Mnww&ixlib=rb-4.1.0&q=80&w=1080',
+    features: [
+      '150 mm x 200 mm x 40 mm ',
+      '0.2 kg apprx',
+      ' 6 channels programmed sound card',
+      ' DC  12V',
+      'Sound Controller ( Pre praogrammed )',
+      'Quantity: 1',
+    ],
+  },
 ];
 
 export default function Products() {
@@ -123,63 +213,6 @@ export default function Products() {
             <ProductCard {...product} index={index} key={index} />
           ))}
         </div>
-      </section>
-
-      {/* Comparison Table */}
-      <section className="container mx-auto px-4 py-20">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-12"
-        >
-          <h2 className="text-4xl md:text-5xl text-white mb-4">
-            Compare Products
-          </h2>
-          <p className="text-xl text-gray-400">
-            Find the right fit for your restaurant size and budget
-          </p>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-8 overflow-x-auto"
-        >
-          <table className="w-full">
-            <thead>
-              <tr className="border-b border-white/20">
-                <th className="text-left text-white py-4 px-4">Features</th>
-                <th className="text-center text-white py-4 px-4">Basic</th>
-                <th className="text-center text-white py-4 px-4">Pro</th>
-                <th className="text-center text-white py-4 px-4">Enterprise</th>
-              </tr>
-            </thead>
-            <tbody>
-              {comparisonFeatures.map((feature, index) => (
-                <tr key={index} className="border-b border-white/10">
-                  <td className="text-gray-300 py-4 px-4">{feature}</td>
-                  <td className="text-center py-4 px-4">
-                    <div className="flex justify-center">
-                      <Check className="w-5 h-5 text-amber-400" />
-                    </div>
-                  </td>
-                  <td className="text-center py-4 px-4">
-                    <div className="flex justify-center">
-                      <Check className="w-5 h-5 text-amber-400" />
-                    </div>
-                  </td>
-                  <td className="text-center py-4 px-4">
-                    <div className="flex justify-center">
-                      <Check className="w-5 h-5 text-amber-400" />
-                    </div>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </motion.div>
       </section>
 
       {/* Add-ons Section */}

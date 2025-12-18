@@ -6,29 +6,29 @@ import { Link } from 'react-router-dom';
 const slides = [
   {
     id: 1,
-    title: 'Basic Train System',
-    subtitle: '4 tables • 10m track',
-    price: '₹2.5 Lakh',
-    description: 'Perfect for small restaurants and cafes starting with automation',
-    image: 'https://images.unsplash.com/photo-1765055509253-0620d7849767?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwdHJhaW4lMjBkZWxpdmVyeXxlbnwxfHx8fDE3NjU5NTMxNDB8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    title: 'STEAM  ENGINE',
+    subtitle: '410 mm x 115 mm x 160 mm',
+    price: '₹46,000.00',
+    description: 'DC 12V - Electric / Battery',
+    image: '/S1.png',
     gradient: 'from-blue-600/20 to-purple-600/20',
   },
   {
     id: 2,
-    title: 'Pro Train System',
-    subtitle: '12 tables • Kitchen station',
-    price: '₹6.5 Lakh',
-    description: 'Advanced system for medium-sized restaurants with kitchen integration',
-    image: 'https://images.unsplash.com/photo-1685040235380-a42a129ade4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjByZXN0YXVyYW50JTIwaW50ZXJpb3J8ZW58MXx8fHwxNzY1OTI2Njg2fDA&ixlib=rb-4.1.0&q=80&w=1080',
+    title: 'ELECTRIC  LOCOMOTIVE (WAP 7)',
+    subtitle: '425 mm x 115 mm x 165 mm',
+    price: '₹47,000.00',
+    description: 'DC 12V - Electric / Battery',
+    image: '/S2.jpeg',
     gradient: 'from-amber-600/20 to-orange-600/20',
   },
   {
     id: 3,
-    title: 'Enterprise System',
-    subtitle: '50+ tables • Multi-level',
-    price: '₹15 Lakh+',
-    description: 'Complete automation for large-scale restaurants and food courts',
-    image: 'https://images.unsplash.com/photo-1623123096729-26b481292919?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb29kJTIwZGVsaXZlcnklMjB0ZWNobm9sb2d5fGVufDF8fHx8MTc2NTk1MzE0MXww&ixlib=rb-4.1.0&q=80&w=1080',
+    title: 'ELECTRIC  LOCOMOTIVE (WAG 9)',
+    subtitle: '420 mm x 115 mm x 165 mm ',
+    price: '₹47,000.00',
+    description: 'DC 12V - Electric / Battery',
+    image: 'S3.jpeg',
     gradient: 'from-green-600/20 to-emerald-600/20',
   },
 ];
@@ -99,8 +99,6 @@ export function BannerSlider() {
               alt={slides[currentSlide].title}
               className="w-full h-full object-cover"
             />
-            <div className={`absolute inset-0 bg-gradient-to-r ${slides[currentSlide].gradient}`} />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent" />
           </div>
 
           {/* Content */}

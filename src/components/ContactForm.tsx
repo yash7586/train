@@ -117,7 +117,7 @@ export function ContactForm() {
                   value={formData.phone}
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-amber-500 transition-colors"
-                  placeholder="+91 98765 43210"
+                  placeholder="+91 xxxxx xxxxx"
                 />
               </div>
 
@@ -151,9 +151,6 @@ export function ContactForm() {
                 className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white focus:outline-none focus:border-amber-500 transition-colors"
               >
                 <option value="" className="bg-slate-900">Select a product</option>
-                <option value="Basic Train System" className="bg-slate-900">Basic Train System (₹2.5L)</option>
-                <option value="Pro Train System" className="bg-slate-900">Pro Train System (₹6.5L)</option>
-                <option value="Enterprise System" className="bg-slate-900">Enterprise System (₹15L+)</option>
                 <option value="Custom Solution" className="bg-slate-900">Custom Solution</option>
               </select>
             </div>
