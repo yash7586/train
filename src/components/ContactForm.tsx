@@ -8,6 +8,7 @@ export function ContactForm() {
   const location = useLocation();
   const { addLead } = useLeads();
   const [isSubmitted, setIsSubmitted] = useState(false);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -17,8 +18,35 @@ export function ContactForm() {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // ✅ YOUR GOOGLE FORM SUBMIT URL
+    const googleFormURL =
+      'https://docs.google.com/forms/d/e/1FAIpQLSeKHDK177EXtiO_jJrupl-wUF_lpUYVjTGE2zChvlFBHn44Ng/viewform?usp=header';
+
+    // ✅ POSITIONAL FORM DATA (NO entry.xxxxx needed)
+    const data = new FormData();
+    data.append('entry.0', formData.name);
+    data.append('entry.1', formData.email);
+    data.append('entry.2', formData.phone);
+    data.append('entry.3', formData.restaurantName);
+    data.append('entry.4', formData.product);
+    data.append('entry.5', formData.message);
+
+    await fetch(googleFormURL, {
+      method: 'POST',
+      mode: 'no-cors',
+      body: data,
+    });
+
+    // ✅ Keep your existing lead logic
     addLead({
       name: formData.name,
       email: formData.email,
@@ -26,7 +54,9 @@ export function ContactForm() {
       restaurantName: formData.restaurantName,
       product: formData.product,
     });
+
     setIsSubmitted(true);
+
     setTimeout(() => {
       setIsSubmitted(false);
       setFormData({
@@ -38,13 +68,6 @@ export function ContactForm() {
         message: '',
       });
     }, 3000);
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
   };
 
   return (
@@ -70,116 +93,74 @@ export function ContactForm() {
           </motion.div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <label htmlFor="name" className="block text-white mb-2">
-                  Full Name *
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-amber-500 transition-colors"
-                  placeholder="John Doe"
-                />
-              </div>
+            <input
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+              placeholder="Full Name"
+              className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white"
+            />
 
-              <div>
-                <label htmlFor="email" className="block text-white mb-2">
-                  Email *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-amber-500 transition-colors"
-                  placeholder="john@restaurant.com"
-                />
-              </div>
-            </div>
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+              placeholder="Email"
+              className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white"
+            />
 
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <label htmlFor="phone" className="block text-white mb-2">
-                  Phone Number *
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  required
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-amber-500 transition-colors"
-                  placeholder="+91 xxxxx xxxxx"
-                />
-              </div>
+            <input
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              required
+              placeholder="Phone Number"
+              className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white"
+            />
 
-              <div>
-                <label htmlFor="restaurantName" className="block text-white mb-2">
-                  Restaurant Name *
-                </label>
-                <input
-                  type="text"
-                  id="restaurantName"
-                  name="restaurantName"
-                  required
-                  value={formData.restaurantName}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-amber-500 transition-colors"
-                  placeholder="The Food House"
-                />
-              </div>
-            </div>
+            <input
+              name="restaurantName"
+              value={formData.restaurantName}
+              onChange={handleChange}
+              required
+              placeholder="Restaurant Name"
+              className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white"
+            />
 
-            <div>
-              <label htmlFor="product" className="block text-white mb-2">
-                Interested Product *
-              </label>
-              <select
-                id="product"
-                name="product"
-                required
-                value={formData.product}
-                onChange={handleChange}
-                className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white focus:outline-none focus:border-amber-500 transition-colors"
-              >
-                <option value="" className="bg-slate-900">Select a product</option>
-                <option value="Custom Solution" className="bg-slate-900">Custom Solution</option>
-              </select>
-            </div>
+            <select
+              name="product"
+              value={formData.product}
+              onChange={handleChange}
+              required
+              className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white"
+            >
+              <option value="" className="bg-slate-900">Select Product</option>
+              <option value="Custom Solution" className="bg-slate-900">
+                Custom Solution
+              </option>
+            </select>
 
-            <div>
-              <label htmlFor="message" className="block text-white mb-2">
-                Additional Requirements
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={4}
-                value={formData.message}
-                onChange={handleChange}
-                className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-amber-500 transition-colors resize-none"
-                placeholder="Tell us about your restaurant and specific requirements..."
-              />
-            </div>
+            <textarea
+              name="message"
+              rows={4}
+              value={formData.message}
+              onChange={handleChange}
+              placeholder="Additional Requirements"
+              className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white"
+            />
 
             <button
               type="submit"
-              className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-900 rounded-lg hover:from-amber-400 hover:to-yellow-400 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-amber-500/50"
+              className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-900 rounded-lg hover:scale-105 transition-all"
             >
-              Send Request
-              <Send className="w-5 h-5" />
+              Send Request <Send className="w-5 h-5" />
             </button>
 
             <p className="text-sm text-gray-400 text-center">
-              We respect your privacy. Your information will not be shared with third parties.
+              We respect your privacy. Your information will not be shared.
             </p>
           </form>
         )}
