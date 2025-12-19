@@ -175,7 +175,7 @@ const allProducts = [
     title: 'SOUND  SYSTEM ',
     subtitle: '150 mm x 200 mm x 40 mm',
     price: '₹20,000.00',
-    image: 'https://images.unsplash.com/photo-1684050611203-cfd998ca2bf8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyYWlsd2F5JTIwdHJhY2tzfGVufDF8fHx8MTc2NTk1MzE0Mnww&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'S13.jpeg',
     features: [
       '150 mm x 200 mm x 40 mm ',
       '0.2 kg apprx',
