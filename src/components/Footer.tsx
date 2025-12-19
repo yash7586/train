@@ -72,11 +72,11 @@ export function Footer() {
           <div>
             <h4 className="text-white mb-4">Products</h4>
             <ul className="space-y-2">
-              <li className="text-gray-400 text-sm">Basic Train System</li>
-              <li className="text-gray-400 text-sm">Pro Train System</li>
-              <li className="text-gray-400 text-sm">Enterprise System</li>
-              <li className="text-gray-400 text-sm">Custom Solutions</li>
-              <li className="text-gray-400 text-sm">Maintenance Plans</li>
+              <li className="text-gray-400 text-sm">STEAM  ENGINE</li>
+              <li className="text-gray-400 text-sm">ELECTRIC  LOCOMOTIVE (WAP 7)</li>
+              <li className="text-gray-400 text-sm">ELECTRIC  LOCOMOTIVE (WAG 9)</li>
+              <li className="text-gray-400 text-sm">DIESEL LOCOMOTIVE</li>
+              <li className="text-gray-400 text-sm">ELECTRIC  LOCOMOTIVE (VANDE  BHARAT)</li>
             </ul>
           </div>
 
