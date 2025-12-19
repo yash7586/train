@@ -64,24 +64,24 @@ const benefits = [
 
 const caseStudies = [
   {
-    name: 'The Delhi Diner',
-    location: 'New Delhi',
+    name: 'The Train Carnival',
+    location: 'Pune maharashtra',
     size: '12 tables',
     result: '45% revenue increase in 6 months',
     quote: 'Our customers love the train system. It\'s become our signature feature and we\'re fully booked every weekend.',
     image: 'https://images.unsplash.com/photo-1685040235380-a42a129ade4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjByZXN0YXVyYW50JTIwaW50ZXJpb3J8ZW58MXx8fHwxNzY1OTI2Njg2fDA&ixlib=rb-4.1.0&q=80&w=1080',
   },
   {
-    name: 'Mumbai Bistro',
-    location: 'Mumbai',
+    name: 'The  Platform 55',
+    location: 'Faridcort punjab',
     size: '25 tables',
     result: '60% reduction in service time',
     quote: 'The system paid for itself in 14 months. Staff productivity is up and our customers are happier than ever.',
     image: 'https://images.unsplash.com/photo-1765055509253-0620d7849767?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwdHJhaW4lMjBkZWxpdmVyeXxlbnwxfHx8fDE3NjU5NTMxNDB8MA&ixlib=rb-4.1.0&q=80&w=1080',
   },
   {
-    name: 'Bangalore Food Court',
-    location: 'Bangalore',
+    name: 'The Train Restuarant Buxer',
+    location: 'Buxer Bihar',
     size: '50 tables',
     result: '70% increase in table turnover',
     quote: 'Best investment we\'ve made. The enterprise system handles our high volume seamlessly.',

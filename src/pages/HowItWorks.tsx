@@ -6,25 +6,25 @@ const steps = [
     icon: Smartphone,
     title: 'Customer Orders',
     description: 'Customers place orders via tablet or staff member enters order into the system',
-    image: 'https://images.unsplash.com/photo-1713857297379-6fc26e70f581?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhdXRvbWF0ZWQlMjBzeXN0ZW18ZW58MXx8fHwxNzY1OTUzMTQxfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: './T1.png',
   },
   {
     icon: Utensils,
     title: 'Kitchen Prepares',
     description: 'Order is sent to kitchen where chefs prepare fresh food and place on train carriages',
-    image: 'https://images.unsplash.com/photo-1485182708500-e8f1f318ba72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwYnVzaW5lc3N8ZW58MXx8fHwxNzY1OTUzMTQyfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'T2.png',
   },
   {
     icon: Train,
     title: 'Automated Delivery',
     description: 'AI-powered system routes the train to the correct table via the track network',
-    image: 'https://images.unsplash.com/photo-1684050611203-cfd998ca2bf8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyYWlsd2F5JTIwdHJhY2tzfGVufDF8fHx8MTc2NTk1MzE0Mnww&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'T3.png',
   },
   {
     icon: Bell,
     title: 'Customer Receives',
     description: 'Train arrives at table, customer receives food, and empty train returns to kitchen',
-    image: 'https://images.unsplash.com/photo-1765055509253-0620d7849767?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwdHJhaW4lMjBkZWxpdmVyeXxlbnwxfHx8fDE3NjU5NTMxNDB8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'T4.png',
   },
 ];
 
