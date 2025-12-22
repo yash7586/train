@@ -77,7 +77,7 @@ export default function Contact() {
           className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl overflow-hidden h-96"
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29417.28266473873!2d88.3978535!3d22.8335569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f890cc14edf4c7%3A0x8113687776e0d800!2sBanarjee%20Para%2C%20Shyamnagar%2C%20Kolkata%2C%20West%20Bengal%20743127!5e0!3m2!1sen!2sin!4v1766052699920!5m2!1sen!2sin"
+            src="https://www.google.com/maps?q=Aitri+Enterprise+Shyamnagar+Kolkata&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}
