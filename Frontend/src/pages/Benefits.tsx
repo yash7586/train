@@ -275,6 +275,16 @@ export default function Benefits() {
         </div>
       </section>
 
+      {/* Success Story Button */}
+      <section className="container mx-auto px-4 py-12 text-center">
+        <button
+          onClick={() => window.location.href = '/success-story'}
+          className="bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded"
+        >
+          View Success Stories
+        </button>
+      </section>
+
       {/* Comparison Table */}
       <section className="container mx-auto px-4 py-20">
         <motion.div

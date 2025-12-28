@@ -8,6 +8,8 @@ import Products from './pages/Products';
 import Contact from './pages/Contact';
 import HowItWorks from './pages/HowItWorks';
 import Benefits from './pages/Benefits';
+import SuccessStory from './pages/SuccessStory';
+import { useEffect } from 'react';
 
 function PageTransition({ children }: { children: React.ReactNode }) {
   return (
@@ -20,6 +22,14 @@ function PageTransition({ children }: { children: React.ReactNode }) {
       {children}
     </motion.div>
   );
+}
+
+function ScrollToTop() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return null;
 }
 
 export default function App() {
@@ -70,8 +80,17 @@ export default function App() {
                   </PageTransition>
                 }
               />
+              <Route
+                path="/success-story"
+                element={
+                  <PageTransition>
+                    <SuccessStory />
+                  </PageTransition>
+                }
+              />
             </Routes>
           </main>
+          <ScrollToTop />
           <Footer />
         </div>
       </BrowserRouter>

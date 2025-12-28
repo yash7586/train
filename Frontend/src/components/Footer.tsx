@@ -41,27 +41,32 @@ export function Footer() {
             <h4 className="text-white mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-gray-400 hover:text-amber-400 transition-colors text-sm">
+                <Link to="/" className="text-gray-400 hover:text-amber-400 transition-colors text-sm" onClick={() => window.scrollTo(0, 0)}>
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/products" className="text-gray-400 hover:text-amber-400 transition-colors text-sm">
+                <Link to="/products" className="text-gray-400 hover:text-amber-400 transition-colors text-sm" onClick={() => window.scrollTo(0, 0)}>
                   Products
                 </Link>
               </li>
               <li>
-                <Link to="/how-it-works" className="text-gray-400 hover:text-amber-400 transition-colors text-sm">
+                <Link to="/how-it-works" className="text-gray-400 hover:text-amber-400 transition-colors text-sm" onClick={() => window.scrollTo(0, 0)}>
                   How It Works
                 </Link>
               </li>
               <li>
-                <Link to="/benefits" className="text-gray-400 hover:text-amber-400 transition-colors text-sm">
+                <Link to="/benefits" className="text-gray-400 hover:text-amber-400 transition-colors text-sm" onClick={() => window.scrollTo(0, 0)}>
                   Benefits
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-gray-400 hover:text-amber-400 transition-colors text-sm">
+                <Link to="/success-story" className="text-gray-400 hover:text-amber-400 transition-colors text-sm" onClick={() => window.scrollTo(0, 0)}>
+                  Success Story
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-gray-400 hover:text-amber-400 transition-colors text-sm" onClick={() => window.scrollTo(0, 0)}>
                   Contact
                 </Link>
               </li>
@@ -103,7 +108,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm">
-            © 2025 TrainDeliver. All rights reserved.
+            © 2025 AitriEnterprise. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-gray-400 hover:text-amber-400 transition-colors text-sm">

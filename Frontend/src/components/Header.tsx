@@ -12,6 +12,7 @@ export function Header() {
     { path: '/products', label: 'Products' },
     { path: '/how-it-works', label: 'How It Works' },
     { path: '/benefits', label: 'Benefits' },
+    { path: '/success-story', label: 'Success Story' },
     { path: '/contact', label: 'Contact' },
   ];
 
